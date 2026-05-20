@@ -51,3 +51,4 @@ yarn-error.log*
 
 # Experimental or one-time run
 test.html
+traefik-deploy/.env

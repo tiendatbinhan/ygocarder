@@ -5,6 +5,7 @@ services:
     image: ${IMAGE_NAME:?}:${IMAGE_TAG:?}
     environment:
       NODE_ENV: production
+    restart: unless-stopped
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=${TRAEFIK_NETWORK}"
